@@ -235,11 +235,15 @@ main {
     background-position: 980px 180px;
 }
 
-main .skills {
+main .skills{
     border-top: 2px solid rgba(255, 255, 255, 0.678);
+
+}
+main .skills article{
     display: flex;
     height: max-content;
-    gap: 8rem;
+    gap: 15rem;
+    justify-content: center;
 }
 
 main .skills ul {
@@ -248,15 +252,19 @@ main .skills ul {
     padding: 30px 0 50px;
     height: max-content;
 }
+main .skills h1{
+    padding-top: 20px;
+    font-size: 60px;
+    color: white;
+}
 
 main .skills ul li {
     padding: 10px;
 }
 
-main .skills ul li:first-child,
-main .skills ul li:nth-child(3) {
+main .skills ul li {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* end main */
