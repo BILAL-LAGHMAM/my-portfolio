@@ -17,7 +17,8 @@ body {
 .projects .container img {
     vertical-align: middle;
 }
-.projects .container .mySlides img{
+
+.projects .container .mySlides img {
     width: 40%;
 }
 
@@ -88,7 +89,8 @@ body {
     display: table;
     clear: both;
 }
-.row{
+
+.row {
     display: flex;
     overflow: hidden;
 }
@@ -133,7 +135,8 @@ header nav a h1 {
     font-weight: bold;
     color: white;
 }
-header nav a{
+
+header nav a {
     text-decoration: none;
 }
 
@@ -152,6 +155,7 @@ header nav ul li a i {
     color: white;
     font-size: 25px;
 }
+
 header nav ul li a i:hover {
     color: rgb(78, 225, 160);
     transform: scale(1.1);
@@ -235,13 +239,16 @@ main {
     background-position: 980px 180px;
 }
 
-main .skills{
+main .skills {
     border-top: 2px solid rgba(255, 255, 255, 0.678);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.678);
 
 }
-main .skills article{
+
+main .skills article {
     display: flex;
     height: max-content;
+    flex-wrap: wrap;
     gap: 15rem;
     justify-content: center;
 }
@@ -252,7 +259,8 @@ main .skills ul {
     padding: 30px 0 50px;
     height: max-content;
 }
-main .skills h1{
+
+main .skills h1 {
     padding-top: 20px;
     font-size: 60px;
     color: white;
@@ -277,9 +285,10 @@ main .skills ul li {
 }
 
 .projects article h1 {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
     color: white;
+    padding-top: 20px;
 }
 
 .projects article a {
@@ -345,7 +354,7 @@ footer .contact .content {
 }
 
 footer .contact .content h1 {
-    font-size: 80px;
+    font-size: 60px;
     color: white;
     padding-bottom: 10px;
 }
@@ -366,6 +375,7 @@ footer .form form {
     gap: 20px;
     width: 100%;
 }
+
 footer .form form * {
     background: transparent;
     outline: none;
@@ -374,15 +384,19 @@ footer .form form * {
     padding: 15px;
     width: 100%;
     color: white;
-    
+
 }
-footer .form form *:focus{
+
+footer .form form *:focus {
     border-color: rgb(78, 225, 160);
     transition-duration: 0.3;
 }
-footer .form form input::placeholder,textarea::placeholder{
+
+footer .form form input::placeholder,
+textarea::placeholder {
     color: white;
 }
+
 footer .form form a {
     text-decoration: none;
     color: white;
@@ -397,17 +411,19 @@ footer .form form a:hover {
     transition-duration: 0.4s;
 }
 
-footer .bottom_footer{
+footer .bottom_footer {
     display: flex;
     justify-content: space-between;
     padding-top: 25px;
 }
+
 footer .bottom_footer a h1 {
     font-size: 35px;
     font-weight: bold;
     color: white;
 }
-footer .bottom_footer a{
+
+footer .bottom_footer a {
     text-decoration: none;
 }
 
@@ -426,6 +442,7 @@ footer .bottom_footer ul li a i {
     color: white;
     font-size: 25px;
 }
+
 footer .bottom_footer ul li a i:hover {
     color: rgb(78, 225, 160);
     transform: scale(1.1);
@@ -433,3 +450,155 @@ footer .bottom_footer ul li a i:hover {
 }
 
 /* end footer */
+
+/* start media screen */
+
+@media screen and (max-width:345px) {
+    header {
+        padding: 20px;
+        display: grid;
+        gap: 381px;
+        margin-bottom: 0;
+        height: unset;
+        background-size: 75%;
+        background-position: -139px 226px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header nav ul {
+        display: flex;
+        gap: 15px;
+    }
+    header nav ul li a i {
+        font-size: 20px;
+    }
+
+    header .content_header .avatar img:last-child {
+        width: 100%;
+    }
+    header .content_header .avatar img:first-child {
+        left: 201px;
+        top: 218px;
+        width: 38%;
+    }
+
+    header .content_header .avatar {
+        width: 56%;
+        position: absolute;
+        top: 112px;
+        right: 131px;
+        z-index: -1;
+    }
+
+    header .content_header .content {
+        width: 100%;
+        gap: 29px;
+    }
+
+    header .content_header .content h1 {
+        font-size: 30px;
+        color: white;
+        line-height: normal;
+        text-align: center;
+    }
+
+    header .content_header .content h1 span {
+        font-size: 30px;
+    }
+
+    header .content_header .content p {
+        text-align: center;
+    }
+
+    header .content_header .content a {
+        align-self: center;
+    }
+
+    header .content_header {
+        display: flex;
+        height: max-content;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    main .skills article {
+        gap: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main .skills article ul {
+        padding: 0;
+    }
+
+    main .skills ul li {
+        color: white;
+        font-size: 20px;
+        padding: 4px;
+    }
+
+    main .skills {
+        display: grid;
+        gap: 12px;
+        padding-bottom: 20px;
+    }
+
+    main .skills h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+
+    .projects article h1 {
+        font-size: 40px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer .contact {
+        display: flex;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.712);
+        padding-bottom: 70px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    footer .contact .content h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    footer .contact .content p {
+        width: auto;
+    }
+
+    footer .form {
+        width: 100%;
+    }
+
+    footer .bottom_footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 0 0;
+        gap: 9px;
+    }
+    footer .bottom_footer ul {
+        gap: 10px;
+    }
+    footer .bottom_footer ul li a i {
+        font-size: 20px;
+    }
+}
+
+/* end media screen */
