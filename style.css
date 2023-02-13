@@ -559,6 +559,7 @@ footer .bottom_footer ul li a i:hover {
 
     .projects article h1 {
         font-size: 40px;
+        padding: 0;
     }
 
     footer {
@@ -598,6 +599,111 @@ footer .bottom_footer ul li a i:hover {
     }
     footer .bottom_footer ul li a i {
         font-size: 20px;
+    }
+}
+@media screen and (min-width:346px) and (max-width:550px){
+    header {
+        display: grid;
+        gap: 625px;
+        height: 160vh;
+        background-size: 56%;
+        background-position: -111px 243px;
+        padding: 10px 30px 50px;
+    }
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header nav ul {
+        display: flex;
+        gap: 15px;
+    }
+    header nav ul li a i {
+        font-size: 20px;
+    }
+
+    header .content_header .avatar img:last-child {
+        right: -40;
+    }
+    header .content_header .avatar img:first-child {
+        left: 323px;
+        top: 285px;
+    }
+
+    header .content_header .avatar {
+        width: 76%;
+        position: absolute;
+        top: 112px;
+        right: 67px;
+        z-index: -1;
+    }
+
+    header .content_header .content {
+        width: 100%;
+        gap: 29px;
+    }
+
+    header .content_header .content h1 {
+        font-size: 30px;
+        color: white;
+        line-height: normal;
+        text-align: center;
+    }
+
+    header .content_header .content h1 span {
+        font-size: 30px;
+    }
+
+    header .content_header .content p {
+        text-align: center;
+    }
+
+    header .content_header .content a {
+        align-self: center;
+    }
+
+    header .content_header {
+        display: flex;
+        height: max-content;
+    }
+    main .skills article{
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+    main{
+        padding: 0px 30px 50px;
+    }
+    main .skills article ul li{
+        font-size: 20px;
+    }
+    main .skills h1{
+        font-size: 45px;
+    }
+    .projects article h1{
+        padding: 0;
+        font-size: 45px;
+    }
+    .projects article{
+        padding-top: 20px;
+    }
+    footer{
+        padding: 0px 30px 50px;
+    }
+    footer .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    footer .form {
+        width: 100%;
+    }
+    footer .contact .content h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    footer .contact .content p{
+        width: 80%;
+        margin: auto;
     }
 }
 
