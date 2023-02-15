@@ -453,11 +453,11 @@ footer .bottom_footer ul li a i:hover {
 
 /* start media screen */
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:284px){
     header {
         padding: 20px;
         display: grid;
-        gap: 381px;
+        gap: 406px;
         margin-bottom: 0;
         height: unset;
         background-size: 75%;
@@ -479,7 +479,8 @@ footer .bottom_footer ul li a i:hover {
     }
 
     header .content_header .avatar img:last-child {
-        width: 100%;
+        width: 221px;
+        right: -38px;
     }
 
     header .content_header .avatar img:first-child {
@@ -497,7 +498,172 @@ footer .bottom_footer ul li a i:hover {
     }
 
     header .content_header .content {
+        width: 91vw;
+        gap: 20px;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    header .content_header .content h1 {
+        font-size: 25px;
+        color: white;
+        line-height: normal;
+        text-align: center;
+    }
+
+    header .content_header .content h1 span {
+        font-size: 25px;
+    }
+
+    header .content_header .content p {
+        text-align: center;
+    }
+
+    header .content_header .content a {
+        align-self: center;
+    }
+
+    header .content_header {
+        display: flex;
+        height: max-content;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    main .skills article {
+        gap: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main .skills article ul {
+        padding: 0;
+    }
+
+    main .skills ul li {
+        color: white;
+        font-size: 20px;
+        padding: 4px;
+    }
+
+    main .skills {
+        display: grid;
+        gap: 12px;
+        padding-bottom: 20px;
+    }
+
+    main .skills h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+
+    .projects article h1 {
+        font-size: 40px;
+        padding: 0;
+        text-align: center;
         width: 100%;
+    }
+    .projects article a {
+        display: none;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer .contact {
+        display: flex;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.712);
+        padding-bottom: 70px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    footer .contact .content h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    footer .contact .content p {
+        width: auto;
+    }
+
+    footer .form {
+        width: 100%;
+    }
+
+    footer .bottom_footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 0 0;
+        gap: 9px;
+    }
+
+    footer .bottom_footer ul {
+        gap: 10px;
+    }
+
+    footer .bottom_footer ul li a i {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:285px) and (max-width:450px) {
+    header {
+        padding: 20px;
+        display: grid;
+        gap: 406px;
+        margin-bottom: 0;
+        height: unset;
+        background-size: 75%;
+        background-position: -139px 226px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 15px;
+    }
+
+    header nav ul li a i {
+        font-size: 20px;
+    }
+
+    header .content_header .avatar img:last-child {
+        width: 221px;
+        right: -47px;
+        top: 22px;
+    }
+
+    header .content_header .avatar img:first-child {
+        left: 201px;
+        top: 218px;
+        width: 38%;
+    }
+
+    header .content_header .avatar {
+        width: 56%;
+        position: absolute;
+        top: 112px;
+        right: 131px;
+        z-index: -1;
+    }
+
+    header .content_header .content {
+        width: 91vw;
         gap: 20px;
         height: 50vh;
         display: flex;
@@ -567,6 +733,11 @@ footer .bottom_footer ul li a i:hover {
     .projects article h1 {
         font-size: 40px;
         padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .projects article a {
+        display: none;
     }
 
     footer {
@@ -611,7 +782,7 @@ footer .bottom_footer ul li a i:hover {
     }
 }
 
-@media screen and (min-width:401px) and (max-width:550px){
+/* @media screen and (min-width:401px) and (max-width:550px){
     header {
         display: grid;
         gap: 435px;
@@ -718,6 +889,6 @@ footer .bottom_footer ul li a i:hover {
         width: 80%;
         margin: auto;
     }
-}
+} */
 
 /* end media screen */
