@@ -453,7 +453,7 @@ footer .bottom_footer ul li a i:hover {
 
 /* start media screen */
 
-@media screen and (max-width:284px){
+@media screen and (max-width:284px) {
     header {
         padding: 20px;
         display: grid;
@@ -571,6 +571,7 @@ footer .bottom_footer ul li a i:hover {
         text-align: center;
         width: 100%;
     }
+
     .projects article a {
         display: none;
     }
@@ -736,6 +737,7 @@ footer .bottom_footer ul li a i:hover {
         text-align: center;
         width: 100%;
     }
+
     .projects article a {
         display: none;
     }
@@ -782,60 +784,70 @@ footer .bottom_footer ul li a i:hover {
     }
 }
 
-/* @media screen and (min-width:401px) and (max-width:550px){
+@media screen and (min-width:451px) and (max-width:650px) {
     header {
+        padding: 20px;
         display: grid;
-        gap: 435px;
-        height: 129vh;
-        background-size: 56%;
-        background-position: -111px 243px;
-        padding: 10px 30px 50px;
+        gap: 41rem;
+        margin-bottom: 0;
+        height: 193vh;
+        background-size: 75%;
+        background-position: -240px 312px;
     }
+
     header nav {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        justify-content: normal;
     }
+
     header nav ul {
         display: flex;
         gap: 15px;
     }
+
     header nav ul li a i {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     header .content_header .avatar img:last-child {
-        right: -40;
+        width: 350px;
+        right: 17px;
+        top: 22px;
     }
+
     header .content_header .avatar img:first-child {
-        left: 323px;
-        top: 285px;
+        left: 302px;
+        top: 280px;
+        width: 26%;
     }
 
     header .content_header .avatar {
-        width: 76%;
+        width: 56%;
         position: absolute;
         top: 112px;
-        right: 67px;
+        right: 131px;
         z-index: -1;
     }
 
     header .content_header .content {
-        width: 100%;
-        gap: 23px;
+        width: 91vw;
+        gap: 20px;
+        height: 50vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: end;
     }
 
     header .content_header .content h1 {
-        font-size: 30px;
+        font-size: 48px;
         color: white;
         line-height: normal;
         text-align: center;
     }
 
     header .content_header .content h1 span {
-        font-size: 30px;
+        font-size: 47px;
     }
 
     header .content_header .content p {
@@ -850,45 +862,98 @@ footer .bottom_footer ul li a i:hover {
         display: flex;
         height: max-content;
     }
-    main .skills article{
-        flex-wrap: nowrap;
+
+    main {
+        padding: 0;
+    }
+    main .skills{
+        padding: 20px;
+    }
+    main .skills article {
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
         gap: 0;
     }
-    main{
-        padding: 0px 30px 50px;
-    }
-    main .skills article ul li{
-        font-size: 20px;
-    }
-    main .skills h1{
-        font-size: 45px;
-    }
-    .projects article h1{
+
+    main .skills article ul {
         padding: 0;
-        font-size: 45px;
     }
-    .projects article{
-        padding-top: 20px;
+
+    main .skills ul li {
+        color: white;
+        font-size: 20px;
+        padding: 4px;
     }
-    footer{
-        padding: 0px 30px 50px;
+
+    main .skills {
+        display: grid;
+        gap: 12px;
+        padding-bottom: 20px;
     }
+
+    main .skills h1 {
+        text-align: center;
+        font-size: 40px;
+        padding: 0;
+    }
+
+    .projects {
+        padding: 20px;
+    }
+
+    .projects article h1 {
+        font-size: 40px;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .projects article a {
+        display: none;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
     footer .contact {
+        display: flex;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.712);
+        padding-bottom: 70px;
         flex-direction: column;
         align-items: center;
-        gap: 50px;
+        gap: 15px;
     }
+
+    footer .contact .content h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    footer .contact .content p {
+        width: auto;
+    }
+
     footer .form {
         width: 100%;
     }
-    footer .contact .content h1{
-        font-size: 45px;
-        text-align: center;
+
+    footer .bottom_footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 0 0;
+        gap: 9px;
     }
-    footer .contact .content p{
-        width: 80%;
-        margin: auto;
+
+    footer .bottom_footer ul {
+        gap: 10px;
     }
-} */
+
+    footer .bottom_footer ul li a i {
+        font-size: 20px;
+    }
+}
+
 
 /* end media screen */
