@@ -1126,5 +1126,61 @@ footer .bottom_footer ul li a i:hover {
     }
 }
 
+@media screen and (min-width:1001px) and (max-width:1350px){
+    header{
+        background-position: -199px 168px;
+        height: 155vh;
+        margin: 0;
+    }
+    header .content_header .content h1 {
+        font-size: 73px;
+        color: white;
+        line-height: 80px;
+    }
+    header .content_header .content h1 span {
+        font-size: 68px;
+        color: white;
+        border-bottom: 5px solid rgb(78, 225, 160);
+    }
+    header .content_header .content p {
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.76);
+        width: 49vw;
+    }
+    header .content_header .avatar img:first-child{
+        right: 31px;
+    }
+    main{
+        background-position: 856px 44px;
+    }
+    main .skills article {
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        gap: 0;
+    }
+    footer .form {
+        width: 116%;
+    }
+    footer .contact .content {
+        align-self: center;
+        width: max-content;
+    }
+    footer .contact .content h1 {
+        font-size: 60px;
+        color: white;
+        padding-bottom: 10px;
+        width: max-content;
+        display: inline-block;
+    }
+    footer .contact .content p {
+        color: rgba(255, 255, 255, 0.733);
+        width: 68%;
+        line-height: 25px;
+        display: inline-block;
+    }
+
+}
+
 
 /* end media screen */
